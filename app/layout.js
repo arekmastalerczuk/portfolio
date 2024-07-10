@@ -1,6 +1,6 @@
 import "./globals.css";
-import NavItem from "@/components/NavItem/NavItem";
 import Image from "next/image";
+import { NavBar } from "@/components/NavBar/NavBar";
 
 export const metadata = {
   title: "Armast. Arkadiusz Mastalerczuk",
@@ -22,20 +22,7 @@ export default function RootLayout({ children }) {
             />
             <span className="font-bold text-lg">Armast</span>
           </a>
-          <nav>
-            <ul className="flex space-x-2 mr-4">
-              <NavItem path="/">Strona główna</NavItem>
-              <NavItem path="/about">O mnie</NavItem>
-              <NavItem path="/portfolio">Portfolio</NavItem>
-              <NavItem path="/goals">Lista celów</NavItem>
-              <NavItem
-                path="/contact"
-                className="cta !text-secondary hover:!text-orange-500"
-              >
-                Kontakt
-              </NavItem>
-            </ul>
-          </nav>
+          <NavBar />
         </header>
         <main className="flex-1 pt-32 max-w-[1600px] self-center">
           {children}
