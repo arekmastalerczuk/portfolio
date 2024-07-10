@@ -1,4 +1,6 @@
-export const Goal = ({ isEven, expirationDate, goal, description }) => {
+import Link from "next/link";
+
+export const Goal = ({ index, isEven, expirationDate, goal, description }) => {
   let content;
   if (isEven) {
     content = (
@@ -17,10 +19,12 @@ export const Goal = ({ isEven, expirationDate, goal, description }) => {
             />
           </svg>
         </div>
-        <div className="timeline-start mb-10 md:text-end">
-          <time className="font-mono italic">{expirationDate}</time>
-          <div className="text-lg font-black">{goal}</div>
-          {description}
+        <div className="timeline-start !mb-10 md:text-end">
+          <Link href={`/goals/${index}`}>
+            <time className="font-mono italic">{expirationDate}</time>
+            <div className="text-lg font-black">{goal}</div>
+            {description}
+          </Link>
         </div>
         <hr />
       </li>
@@ -44,9 +48,11 @@ export const Goal = ({ isEven, expirationDate, goal, description }) => {
           </svg>
         </div>
         <div className="timeline-end mb-10">
-          <time className="font-mono italic">{expirationDate}</time>
-          <div className="text-lg font-black">{goal}</div>
-          {description}
+          <Link href={`/goals/${index}`}>
+            <time className="font-mono italic">{expirationDate}</time>
+            <div className="text-lg font-black">{goal}</div>
+            {description}
+          </Link>
         </div>
         <hr />
       </li>
