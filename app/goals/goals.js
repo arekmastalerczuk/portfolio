@@ -15,20 +15,27 @@ export const GOALS = [
   },
   {
     id: 3,
+    expirationDate: "2024-10-15",
+    goal: "Poznać daisyUI",
+    description:
+      "Nauczyć się korzystać z daisyUI, rozszerzenia dla Tailwind CSS, aby przyspieszyć tworzenie atrakcyjnych komponentów UI. Przeanalizować dostępne komponenty i style w daisyUI oraz zintegrować je w projekcie strony portfolio. Zapewnić spójność stylów i zwiększyć produktywność dzięki gotowym komponentom UI. Dodać interaktywne elementy, takie jak formularze, przyciski i modale, korzystając z daisyUI.",
+  },
+  {
+    id: 4,
     expirationDate: "2024-10-31",
     goal: "Zrozumieć TypeScript",
     description:
       "Przerobić kurs TypeScript i wdrożyć go w projekcie frontendu. Poznać podstawowe typy, interfejsy, klasy oraz zasady programowania obiektowego w TypeScript. Zrozumieć, jak TypeScript może poprawić jakość kodu i zmniejszyć liczbę błędów. Przeanalizować i przepisać istniejący projekt JavaScript na TypeScript, testując każdą funkcjonalność. Stworzyć dokumentację dla projektu i przygotować go do wdrożenia.",
   },
   {
-    id: 4,
+    id: 5,
     expirationDate: "2024-11-30",
     goal: "Stworzyć aplikację SPA",
     description:
       "Nauczyć się tworzenia aplikacji Single Page Application (SPA) z użyciem Vue.js. Poznać podstawy Vue.js, takie jak reakcja na dane, dyrektywy, komponenty i routing. Zaprojektować architekturę aplikacji SPA, implementując dynamiczne ładowanie danych oraz zarządzanie stanem za pomocą Vuex. Przeprowadzić testy jednostkowe i end-to-end dla kluczowych funkcji aplikacji. Wdrożyć gotową aplikację na platformie hostingowej.",
   },
   {
-    id: 5,
+    id: 6,
     expirationDate: "2025-03-30",
     goal: "Opanować GraphQL",
     description:
